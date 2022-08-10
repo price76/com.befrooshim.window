@@ -7,13 +7,16 @@
     *ngIf = '!isLoading && good'
 >
     <image-panel
-        [imageList]="good.imageList"
+        [imageList] = "good.imageList"
     ></image-panel>
 
     <h3>
         {{good.title}}
     </h3>
 
+    <category-label
+        [category] = 'good.category'
+    ></category-label>
     <p>
         {{good.description}}
     </p>
