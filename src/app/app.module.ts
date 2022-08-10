@@ -47,6 +47,7 @@ import { CategoryPanelComponent } from '../components/category/panel/category-pa
 import { CategoryListComponent } from '../components/category/list/category-list.component';
 import { CategoryListItemComponent } from '../components/category/list-item/category-list-item.component';
 import { CategoryLabelComponent } from '../components/category/label/category-label.component';
+import { PriceLabelComponent } from '../components/good/price-label/price-label.component';
 
 
 
@@ -94,7 +95,8 @@ import { CategoryLabelComponent } from '../components/category/label/category-la
     CategoryPanelComponent,
     CategoryListComponent,
     CategoryListItemComponent,
-    CategoryLabelComponent
+    CategoryLabelComponent,
+    PriceLabelComponent
   ],
   imports: [
     BrowserModule,
