@@ -40,6 +40,9 @@ import { GoodHomeComponent } from '../components/good/home/good-home.component';
 import { StoreNavigationBarComponent } from '../components/store/navigation-bar/store-navigation-bar.component';
 import { StoreContactComponent } from '../components/store/contact/store-contact.component';
 import { BlogHomeComponent } from 'src/components/blog/home/blog-home.component';
+import { TagPanelComponent } from '../components/tag/panel/tag-panel.component';
+import { TagListComponent } from '../components/tag/list/tag-list.component';
+import { TagListItemComponent } from '../components/tag/list-item/tag-list-item.component';
 
 
 
@@ -80,7 +83,10 @@ import { BlogHomeComponent } from 'src/components/blog/home/blog-home.component'
     GoodHomeComponent,
     StoreNavigationBarComponent,
     StoreContactComponent,
-    BlogHomeComponent
+    BlogHomeComponent,
+    TagPanelComponent,
+    TagListComponent,
+    TagListItemComponent
   ],
   imports: [
     BrowserModule,

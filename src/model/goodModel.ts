@@ -1,4 +1,5 @@
 import { Image } from "./imageModel";
+import { Tag } from "./tagModel";
 
 export interface Good{
     _id:string,
@@ -9,4 +10,5 @@ export interface Good{
     createDate:Date,
     Code: number,
     store: string,
+    tagList: Tag[],
 }
