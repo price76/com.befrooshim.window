@@ -43,6 +43,10 @@ import { BlogHomeComponent } from 'src/components/blog/home/blog-home.component'
 import { TagPanelComponent } from '../components/tag/panel/tag-panel.component';
 import { TagListComponent } from '../components/tag/list/tag-list.component';
 import { TagListItemComponent } from '../components/tag/list-item/tag-list-item.component';
+import { CategoryPanelComponent } from '../components/category/panel/category-panel.component';
+import { CategoryListComponent } from '../components/category/list/category-list.component';
+import { CategoryListItemComponent } from '../components/category/list-item/category-list-item.component';
+import { CategoryLabelComponent } from '../components/category/label/category-label.component';
 
 
 
@@ -86,7 +90,11 @@ import { TagListItemComponent } from '../components/tag/list-item/tag-list-item.
     BlogHomeComponent,
     TagPanelComponent,
     TagListComponent,
-    TagListItemComponent
+    TagListItemComponent,
+    CategoryPanelComponent,
+    CategoryListComponent,
+    CategoryListItemComponent,
+    CategoryLabelComponent
   ],
   imports: [
     BrowserModule,
