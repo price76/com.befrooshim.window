@@ -1,0 +1,9 @@
+<ul>
+    <li
+        *ngFor = "let cartListItem of cartListItemList"
+    >
+        <cart-list-item
+            [cartListItem] = 'cartListItem'
+        ></cart-list-item>
+    </li>
+</ul>

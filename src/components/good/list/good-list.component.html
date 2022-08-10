@@ -1,0 +1,12 @@
+<h2>
+    محصولات-خدمات
+</h2>
+<ul>
+    <li
+        *ngFor = "let good of goodList"
+    >
+        <good-list-item
+            [good] = 'good'
+        ></good-list-item>
+    </li>
+</ul>

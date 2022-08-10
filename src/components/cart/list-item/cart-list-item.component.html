@@ -1,0 +1,42 @@
+<dl>
+    <dt>
+        تصویر
+    </dt>
+    <dd>
+        <image-list-item
+            [image]="cartListItem.good.imageList[0]"
+        ></image-list-item>
+
+    </dd>
+
+    <dt>
+        عنوان
+    </dt>
+    <dd>
+        {{cartListItem.good.title}}
+    </dd>
+
+    <dt>
+        قیمت
+    </dt>
+    <dd>
+        {{cartListItem.good.price}}
+    </dd>
+
+    <dt>
+        تعداد
+    </dt>
+    <dd>
+        {{cartListItem.count}}
+    </dd>
+</dl>
+
+<b>
+    مجموع 
+</b>
+
+<button
+    (click)="remove()"
+>
+    حذف
+</button>

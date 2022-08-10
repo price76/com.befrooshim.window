@@ -1,0 +1,15 @@
+<a 
+    [routerLink]="['/home', {id:storeId}]"
+>
+خانه
+</a>
+<div
+    *ngIf = '!isLoading && blog'
+>
+    <h3>
+        {{blog.title}}
+    </h3>
+    <p>
+        {{blog.description}}
+    </p>
+</div>

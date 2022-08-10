@@ -1,0 +1,8 @@
+<good-empty-list
+    *ngIf="!isLoading && goodList.length == 0"
+></good-empty-list>
+
+<good-list
+    *ngIf="!isLoading && goodList.length > 0"
+    [goodList] = "goodList"
+></good-list>

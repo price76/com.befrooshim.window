@@ -1,0 +1,22 @@
+<div
+    *ngIf = "count > 0"
+>
+    <button
+        (click) = "setCount(count + 1)"
+    >
+        +
+    </button>
+        {{count}}
+    <button
+        (click) = "setCount(count - 1)"
+    >
+        -
+    </button>
+</div>
+
+<button
+    *ngIf = "count == 0"
+    (click) = "setCount(1)"
+>
+    اضافه کردن به سبد خرید
+</button>

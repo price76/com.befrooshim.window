@@ -1,0 +1,13 @@
+<div>
+    <img src="/assets/images/icons/validation-code.svg" alt="">
+    <input
+        type="tel"
+        maxlength = '5'
+        (keyup) = 'typing($event)'
+        [(ngModel)]="inputConfirmationCode"
+    >
+</div>
+
+<validation-result
+    [validationResult] = 'validationResult'
+></validation-result>

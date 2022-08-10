@@ -1,0 +1,12 @@
+<div>
+    <img src="/assets/images/icons/phone.svg" alt="">
+    <input
+        type="tel"
+        maxlength = '11'
+        (keyup) = 'typing($event)'
+        [(ngModel)] = "inputMoblieNumber"
+    >
+</div>
+<validation-result
+    [validationResult] = 'validationResult'
+></validation-result>

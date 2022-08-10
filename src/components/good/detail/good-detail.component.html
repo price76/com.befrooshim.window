@@ -1,0 +1,21 @@
+<a 
+    [routerLink]="['/home', {id:storeId}]"
+>
+خانه
+</a>
+<div
+    *ngIf = '!isLoading && good'
+>
+    <h3>
+        {{good.title}}
+    </h3>
+    <p>
+        {{good.description}}
+    </p>
+    <cart-add-to-button
+        [good]="good"
+    ></cart-add-to-button>
+    <image-panel
+        [imageList]="good.imageList"
+    ></image-panel>
+</div>

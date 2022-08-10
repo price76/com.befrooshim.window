@@ -1,0 +1,12 @@
+<store-header
+    *ngIf = "!isLoading && store"
+    [store] = "store"
+></store-header>
+<store-navigation-bar
+    [storeId] = "store._id.toString()"
+></store-navigation-bar>
+<router-outlet></router-outlet>
+<store-contact
+    [store] = "store"
+></store-contact>
+<store-footer></store-footer>

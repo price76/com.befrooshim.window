@@ -1,0 +1,33 @@
+<nav>
+    <ul>
+        <li>
+            <a
+                [routerLink]="['/home', {id:storeId}]"
+            >
+                خانه
+            </a>
+        </li>
+        <li>
+            <a
+                [routerLink]="['/home', {id:storeId}, 'good']"
+            >
+                محصولات
+            </a>
+        </li>
+        <li>
+            <a
+                [routerLink]="['/home', {id:storeId}, 'blog']"
+            >
+                مطالب
+            </a>
+        </li>
+        <li>
+            <a 
+                fragment = "contact"
+                (click)="navigateToContact()"
+            >
+                پشتیبانی
+            </a>
+        </li>
+    </ul>
+</nav>

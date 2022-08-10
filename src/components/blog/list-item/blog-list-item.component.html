@@ -1,0 +1,8 @@
+<h3>
+    {{blog.title}}
+</h3>
+<a
+    [routerLink]="['/home',{id:blog.store.toString()},'blog','detail', {id:blog._id.toString()}]"
+>
+    مشاهده
+</a>

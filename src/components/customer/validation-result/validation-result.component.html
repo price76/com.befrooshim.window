@@ -1,0 +1,18 @@
+<div>
+    <span
+        *ngIf = 'validationResult.isValid'
+    >
+        معتبر است
+    </span>
+    <ul
+        *ngIf = '!validationResult.isValid'
+    >
+        <li
+            *ngFor = 'let message of validationResult.errorMessageList' 
+        >
+            {{message}}
+        </li>
+
+    </ul>
+
+</div>

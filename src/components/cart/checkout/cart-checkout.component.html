@@ -1,0 +1,72 @@
+<form>
+    <legend>
+        اطلاعات تحویل سفارش
+    </legend>
+    <ul>
+        <li>
+            <label
+                for="txtMobileNumber"
+            >
+                شماره موبایل:
+            </label>
+            <mobile-number-input
+                id = "txtMobileNumber"
+                (setMobileNumber)= "setMobileNumber($event)"
+            ></mobile-number-input>
+        </li>
+        <li>
+            <label
+                for = "txtAddress"
+            >
+                آدرس ارسال
+            </label>
+            <address-input
+                id = 'txtAddress'
+                (setAddress) = "setAddress($event)"
+            ></address-input>
+        </li>
+    </ul>
+    <button
+        [disabled] = "!isValidCheckout()"
+        (click) = "getToken()"
+    >
+        مرحله بعد
+    </button>
+</form>
+<form>
+    <legend>
+        تایید شماره تلفن همراه 
+    </legend>
+    <ul>
+        <li>
+            <label
+                for = "txtConfirmCode"
+            >
+                کد تایید
+            </label>
+            <confirm-code-input
+                (setConfirmationCode) = "setConfirmationCode($event)"
+            ></confirm-code-input>
+        </li>
+    </ul>
+    <button
+        [disabled]="!isValidConfrimationCode()"
+        (click)="checkToken()"
+    >
+        تایید
+    </button>
+</form>
+<div>
+    <h4>
+        سفارش شما با موفقیت ثبت شد
+    </h4>
+    <p>
+        از سفارش شما متشکریم.
+    </p>
+    <p>
+        برای هماهنگی زمان ارسال با شما تماس خواهیم گرفت.
+    </p>
+    <button>
+        باشه
+    </button>
+</div>

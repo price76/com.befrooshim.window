@@ -1,0 +1,12 @@
+<h2>
+    مطالب
+</h2>
+<ul>
+    <li
+        *ngFor="let blog of blogList"
+    >
+        <blog-list-item
+            [blog] = 'blog'
+        ></blog-list-item>
+    </li>
+</ul>

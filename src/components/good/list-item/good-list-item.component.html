@@ -1,0 +1,31 @@
+<dl>
+
+    <dt>
+        عنوان
+    </dt>
+    <dd>
+        {{good.title}}
+    </dd>
+
+    <dt>
+        مبلغ
+    </dt>
+    <dd>
+        {{good.price}}
+    </dd>
+
+    <dt>
+        عکس
+    </dt>
+    <dd>
+        <image-panel
+            [imageList]="good.imageList"
+        ></image-panel>
+    </dd>
+
+</dl>
+<a
+    [routerLink]="['/home',{id:good.store.toString()},'good','detail', {id:good._id.toString()}]"
+>
+    مشاهده
+</a>

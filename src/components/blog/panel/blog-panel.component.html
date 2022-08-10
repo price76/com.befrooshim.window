@@ -1,0 +1,8 @@
+<blog-empty-list
+    *ngIf = "!isLoading && blogList.length == 0"
+></blog-empty-list>
+
+<blog-list
+    *ngIf = "!isLoading && blogList.length > 0"
+    [blogList] = "blogList"
+></blog-list>
