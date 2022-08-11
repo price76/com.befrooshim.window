@@ -48,6 +48,8 @@ import { CategoryListComponent } from '../components/category/list/category-list
 import { CategoryListItemComponent } from '../components/category/list-item/category-list-item.component';
 import { CategoryLabelComponent } from '../components/category/label/category-label.component';
 import { PriceLabelComponent } from '../components/good/price-label/price-label.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 
@@ -104,6 +106,12 @@ import { PriceLabelComponent } from '../components/good/price-label/price-label.
     HttpClientModule,
     FormsModule,
     CommonModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: true,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
