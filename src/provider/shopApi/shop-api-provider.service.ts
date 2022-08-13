@@ -12,7 +12,7 @@ export class ShopApiProviderService {
   ){}
 
   getStore(storeId: string):any{
-    const url = 'http://api_window_store.befrooshim.com/store/get';
+    const url = 'https://api_window_store.befrooshim.com/store/get';
     var headers: HttpHeaders = new HttpHeaders();
 
 		var body: any = {
@@ -27,7 +27,7 @@ export class ShopApiProviderService {
 	}
 
 	getGoodList(storeId: string):any{
-		const url = 'http://api_window_store.befrooshim.com/good/getAll';
+		const url = 'https://api_window_store.befrooshim.com/good/getAll';
     	var headers: HttpHeaders = new HttpHeaders();
 
 		var body: any = {
@@ -42,7 +42,7 @@ export class ShopApiProviderService {
 	}
 
 	getBlogList(storeId: string):any{
-		const url = 'http://api_window_store.befrooshim.com/blog/getAll';
+		const url = 'https://api_window_store.befrooshim.com/blog/getAll';
     	var headers: HttpHeaders = new HttpHeaders();
 
 		var body: any = {
@@ -57,7 +57,7 @@ export class ShopApiProviderService {
 	}
 
 	getGood(goodId: string):any{
-		const url = 'http://api_window_store.befrooshim.com/good/get';
+		const url = 'https://api_window_store.befrooshim.com/good/get';
     	var headers: HttpHeaders = new HttpHeaders();
 
 		var body: any = {
@@ -72,7 +72,7 @@ export class ShopApiProviderService {
 	}
 
 	getBlog(blogId: string):any{
-		const url = 'http://api_window_store.befrooshim.com/blog/get';
+		const url = 'https://api_window_store.befrooshim.com/blog/get';
     	var headers: HttpHeaders = new HttpHeaders();
 
 		var body: any = {
@@ -87,7 +87,7 @@ export class ShopApiProviderService {
 	}
 
 	createOrder(storeId : string,mobileNumber:string,address:string,orderItemList:CartListItem[]):any{
-		const url = 'http://api_window_store.befrooshim.com/order/create';
+		const url = 'https://api_window_store.befrooshim.com/order/create';
     	var headers: HttpHeaders = new HttpHeaders();
 
 		var body: any = {
@@ -105,7 +105,7 @@ export class ShopApiProviderService {
 	}
 
 	getToken(mobileNumber : string):any{
-		const url = 'http://api_window_store.befrooshim.com/user/getToken';
+		const url = 'https://api_window_store.befrooshim.com/user/getToken';
     	var headers: HttpHeaders = new HttpHeaders();
 
 		var body: any = {
@@ -120,7 +120,7 @@ export class ShopApiProviderService {
 	}
 
 	checkToken(userId : string,token: string):any{
-		const url = 'http://api_window_store.befrooshim.com/user/checkToken';
+		const url = 'https://api_window_store.befrooshim.com/user/checkToken';
     	var headers: HttpHeaders = new HttpHeaders();
 
 		var body: any = {
