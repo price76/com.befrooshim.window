@@ -42,7 +42,7 @@
     ],
     "intent_filters": {
       "scope_url_scheme": "https",
-      "scope_url_host": "window.befrooshim.ir",
+      "scope_url_host": "win2.befrooshim.com",
       "scope_url_path": "/"
     }
   }
