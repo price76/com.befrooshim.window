@@ -3,6 +3,7 @@ export interface Store{
     title:string,
     description: string,
     logoUrl: string,
+    logoUrls: string,
     mobileNumber: string,
     telegramUsername: string,
     instagram: string,
