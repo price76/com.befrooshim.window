@@ -1,0 +1,27 @@
+dl {
+	dt {
+		display: none;
+	}
+	text-align: right;
+
+	dd {
+		&:nth-of-type(2) {
+			font-size: 14px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.71;
+			letter-spacing: normal;
+			color: #22262a;
+		}
+		&:nth-of-type(3) {
+			font-size: 14px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.71;
+			letter-spacing: 0.35px;
+			color: #ff4858;
+		}
+	}
+}
