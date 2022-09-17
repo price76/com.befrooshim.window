@@ -296,7 +296,6 @@ td {
 }
 a {
 	text-decoration: none;
-	color: transparent;
 }
 
 @font-face {
@@ -306,6 +305,8 @@ a {
 body {
 	font-family: IRANSansWeb;
 	margin: 0;
+	background-color: #fafafa;
+
 }
 
 @font-face {
@@ -325,3 +326,4 @@ body {
 	font-family: Number;
 	src: url("assets/fonts/IRANSansWeb\(FaNum\).woff2");
 }
+

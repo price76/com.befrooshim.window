@@ -1,26 +1,17 @@
 <dl>
-    <dt>
-        لوگو
-    </dt>
-    <dt>
-
-    </dt>
-        <img
-            [src] = "store.logoUrls"
-        />
-    <dt>
-        عنوان
-    </dt>
-    <dd>
-        {{store.title}}
+	<dt>لوگو</dt>
+	<dd>
+		<img [src]="store.logoUrls" />
     </dd>
+	<dt>عنوان</dt>
+	<dd>
+		{{ store.title }}
+	</dd>
 
-    <dt>
-        شعار
-    </dt>
-    <dd>
-        {{store.description}}
-    </dd>
+	<dt>شعار</dt>
+	<dd>
+		{{ store.description }}
+	</dd>
 </dl>
 
 <cart-banner></cart-banner>
