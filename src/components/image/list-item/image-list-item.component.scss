@@ -3,4 +3,6 @@ img {
 	height: 140px;
 	margin: 0 auto 55px auto;
 	display: block;
+	position: relative;
+	z-index: 3;
 }

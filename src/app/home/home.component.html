@@ -1,14 +1,18 @@
-<store-header
+<header>    
+    <store-header
     *ngIf = "!isLoading && store"
     [store] = "store"
-></store-header>
-<store-navigation-bar
-    *ngIf = "!isLoading && store"
-    [storeId] = "store._id.toString()"
-></store-navigation-bar>
-<router-outlet></router-outlet>
-<store-contact
-    *ngIf = "!isLoading && store"
-    [store] = "store"
-></store-contact>
-<store-footer></store-footer>
+    ></store-header>
+    <store-navigation-bar
+        *ngIf = "!isLoading && store"
+        [storeId] = "store._id.toString()"
+    ></store-navigation-bar>
+</header>
+<main>
+    <router-outlet></router-outlet>
+    <store-contact
+        *ngIf = "!isLoading && store"
+        [store] = "store"
+    ></store-contact>
+    <store-footer></store-footer>
+</main>
