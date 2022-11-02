@@ -8,7 +8,7 @@
         [storeId] = "store._id.toString()"
     ></store-navigation-bar>
 </header>
-<main>
+<main class="container">
     <router-outlet></router-outlet>
     <store-contact
         *ngIf = "!isLoading && store"
